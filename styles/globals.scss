@@ -1,26 +1,46 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/*------------------------------------------------------------------
+[Imports] 
+*/
+@import "./reset";
+@import "./variables";
+@import "./fonts";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+/*------------------------------------------------------------------
+[Resets] 
+*/
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+/*------------------------------------------------------------------
+[Typography] 
+*/
+body {
+  font-family: $mukta-light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 137.02%;
 }
